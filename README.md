@@ -177,7 +177,7 @@ npm publish
 ```
 Now you have successfully publish the package to NPM.
 
-## How to use the publish npm package in client applciation
+## How to use the published npm package in client applciation
 
 #### create an angular client project using angular-cli as steps mentioned in above.
 Install the published package to the client applition
