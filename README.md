@@ -15,7 +15,7 @@ Now Angular application is ready to use..
 
 ### Create folder as export to keep all the components, modules to export to package
 
-Create a export module name as emi in the folder
+Create a export module in export folder
 ```
 ng g module export
 ```
