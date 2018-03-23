@@ -26,7 +26,7 @@ ng g component export/emi
 ```
 
 Export emi component in export.module
-```
+```typescript
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmiComponent } from './emi/emi.component';
@@ -43,7 +43,7 @@ export class ExportModule { }
 
 ### Import Export module in App.module
 
-```
+```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -70,7 +70,7 @@ export class AppModule { }
 ```
 
 Add below code to invoke Emi component in app.component.html for testing.
-```
+```typescript
 <app-emi>Test</app-emi>
 ```
 
@@ -107,7 +107,7 @@ export * from './src/app/export/export.module';
 ### Configure ng-package.json
 Create a file with name as ng-package.json for picking the library entry file
 [Reference](https://www.npmjs.com/package/ng-packagr#configuration-locations)
-```
+```json
 {
     "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
     "lib": {
@@ -120,7 +120,7 @@ Create a file with name as ng-package.json for picking the library entry file
 ### Add Script to Package.json for package creation
 
 Change private property to false in package.json for publishing.
-```
+```json
 "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -187,7 +187,7 @@ $ npm install yourpackageName --save
 
 Import the Export module to the App.module.ts in client application
 
-```
+```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -211,7 +211,7 @@ export class AppModule { }
 ```
 
 Add below code to invoke Emi component from npm package to app.component.html in client application.
-```
+```typescript
 <app-emi>Test</app-emi>
 ```
 
