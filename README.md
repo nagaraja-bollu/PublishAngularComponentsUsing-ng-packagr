@@ -8,7 +8,7 @@
 
 Run below commands for create a angular template
 ```sh
-$ ng g new project-name
+$ ng new project-name
 $ cd project-name
 ```
 Now Angular application is ready to use..
